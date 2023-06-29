@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="cad.css">
+    <link rel="icon" href="azinho.jpeg">
+    <title>Registro na Amazon</title>
+</head>
+<body>
+    <div class="container">
+        <img src="loginprime.png" alt="Imagem de logo">
+        <h1 id="titulo">Criar conta</h1>
+        <form action="cadastro.php" method="POST">
+            <fieldset class="grupo"> 
+                <div>
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+            </fieldset>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Pelo menos 6 caracteres">
+                <p>As senhas devem ter pelo menos 6 caracteres.</p>
+            </div>
+            <div>
+                <button type="submit" class="orange-button">Criar sua conta da Amazon</button>
+            </div>
+        </form>
+        <p>Já possui uma conta? <a href="login.html">Faça login</a></p>
+        
+        <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.primevideo.com/help/ref=av_auth_hp">Ajuda</a>
+    
+        <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.primevideo.com/ww-av-legal-home/ref=av_auth_ter">Termos e aviso de privacidade</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
