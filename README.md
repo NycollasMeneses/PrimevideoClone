@@ -10,7 +10,7 @@ Executando o projeto
 Clone o repositório para o seu ambiente de desenvolvimento:
 bash
 Copy code
-git clone https://github.com/seu-usuario/amazon-prime-video-clone.git
+git clone https://github.com/NycollasMeneses/PrimevideoClone
 Abra o arquivo index.html no seu navegador de preferência.
 Funcionalidades
 Exibição de filmes populares: Os filmes populares são obtidos por meio de requisições à API do TMDb e são exibidos na seção central da página inicial. São exibidos banners para os primeiros filmes e cartões para os demais.
