@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="iconeprime.jpeg">
+  <title>Acessar Amazon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffffff;
+    }
+
+    form {
+      background-color: #ffffff;
+      max-width: 500px;
+      width: 70%;
+      padding: 20px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form h3 {
+      text-align: center;
+      color: #000000;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+      width: 100%;
+      height: 45px;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+      margin: 10px 0;
+    }
+
+    form input[type="submit"] {
+      width: 100%;
+      height: 30px;
+      cursor: pointer;
+      background-color: orange;
+      color: #000000;
+      border: none;
+    }
+
+    .a-link-normal {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+    <form action="amazonprime.html">
+        <img src="loginprime.png" alt="Imagem de logo">
+        <h3>Fazer login</h3>
+        <input type="text" name="email" placeholder="E-mail ou número de telefone celular">
+        <input type="password" name="senha" placeholder="Sua senha">
+        <input type="submit" name="acao" value="Fazer login">
+    
+        <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.primevideo.com/help/ref=av_auth_hp">Ajuda</a>
+    
+        <a class="a-link-normal" target="_blank" rel="noopener"
+          href="https://www.primevideo.com/ww-av-legal-home/ref=av_auth_ter">Termos e aviso de privacidade</a>
+          <p> Não possui uma conta?</p>  
+          <input type="button" name="cadastre" value="Cadastre-se" onclick="window.location.href='cadastroprime.html'">
+    </form>
+</body>
+
+</html>
