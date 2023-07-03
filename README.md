@@ -36,7 +36,7 @@ A funcionalidade de pesquisa de filmes ainda não está implementada no código 
 Sinta-se à vontade para modificar e expandir esse projeto de acordo com suas necessidades.
 
 O codigo vai ter comentarios em PHP, visto que apesar de fazer o codigo,não soube configurar o servidor.
-
+Com pelo menos mais 1 semana conseguiria deixar uma interface mais fluida e com que o banco de dados e formularios funcionassem 100% visto que conseguiria aperfeiçoar meus conhecimentos.
 
 Licença
 Este projeto está licenciado sob a MIT License.
