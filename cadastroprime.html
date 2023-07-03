@@ -1,44 +1,124 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="cad.css">
     <link rel="icon" href="azinho.jpeg">
     <title>Registro na Amazon</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 5px;
+        }
+
+        .container img {
+            max-width: 120px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .container h1 {
+            font-family: sans-serif;
+            color: #000;
+            margin-left: 7%;
+        }
+
+        .container form {
+            text-align: left;
+        }
+
+        .container label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="password"] {
+            width: 100%;
+            height: 30px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .container .cadastrar {
+            background-color: orange;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <img src="loginprime.png" alt="Imagem de logo">
         <h1 id="titulo">Criar conta</h1>
-        <form action="cadastro.php" method="POST">
-            <fieldset class="grupo"> 
+        <form action="login.html" method="post">
+            <!--Se o BD funcionasse era só trocar por cadastro.php-->
+            <fieldset class="grupo">
                 <div>
-                    <label for="nome"><strong>Nome</strong></label>
+                    <label for="nome"><strong>Nome*</strong></label>
                     <input type="text" name="nome" id="nome" required>
                 </div>
                 <div>
-                    <label for="sobrenome">Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome">
+                    <label for="sobrenome">Sobrenome*</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+                <div>
+                    <label for="cpf">CPF*</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
                 </div>
             </fieldset>
             <div>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
+                <label for="email">E-mail*</label>
+                <input type="email" name="email" id="email" required>
             </div>
             <div>
-                <label>Senha</label>
-                <input type="password" name="senha" placeholder="Pelo menos 6 caracteres">
+                <label>Senha*</label>
+                <input type="password" name="senha" placeholder="Pelo menos 6 caracteres" required>
                 <p>As senhas devem ter pelo menos 6 caracteres.</p>
+                <label>Repita sua senha*</label>
+                <input type="password" name="check-senha" required>
             </div>
             <div>
-                <button type="submit" class="orange-button">Criar sua conta da Amazon</button>
+                <button type="submit" class="cadastrar" id="cadastrar">Criar sua conta da Amazon</button>
             </div>
         </form>
         <p>Já possui uma conta? <a href="login.html">Faça login</a></p>
-        
-        <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.primevideo.com/help/ref=av_auth_hp">Ajuda</a>
-    
-        <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.primevideo.com/ww-av-legal-home/ref=av_auth_ter">Termos e aviso de privacidade</a>
+
+        <a class="a-link-normal" target="_blank" rel="noopener"
+            href="https://www.primevideo.com/help/ref=av_auth_hp">Ajuda</a>
+
+        <a class="a-link-normal" target="_blank" rel="noopener"
+            href="https://www.primevideo.com/ww-av-legal-home/ref=av_auth_ter">Termos e aviso de privacidade</a>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
