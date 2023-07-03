@@ -6,9 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Conecta ao banco de dados (substitua os valores com suas informações de conexão)
     $servername = "localhost";
-    $username = "seu_usuario";
-    $password = "sua_senha";
-    $dbname = "seu_banco_de_dados";
+    $username = "root";
+    $password = "";
+    $dbname = "formulariocadastro";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -17,8 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Erro na conexão com o banco de dados: " . $conn->connect_error);
     }
 
-    // Consulta o banco de dados para verificar as credenciais do usuário (substitua "tabela_usuarios" pelo nome da sua tabela)
-    $sql = "SELECT * FROM tabela_usuarios WHERE email = '$email' AND senha = '$senha'";
+    // Consulta o banco de dados para verificar as credenciais do usuário 
+    $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
