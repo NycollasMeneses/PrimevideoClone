@@ -1,50 +1,50 @@
-.cadastroprime{
+.cadastroprime {
     margin: 0;
     padding: 0;
-  }
+}
 
-
-.titulo{
+.titulo {
     font-family: sans-serif;
     color: black;
     margin-left: 7%;
 }
 
-fieldset{
+fieldset {
     border: 0;
 }
 
-.campo{
+.campo {
     margin-bottom: 1em;
 }
 
-.campo label[
+.campo label {
     margin-bottom: 0.2em;
-]
+}
 
-fieldset.grupo .campo{
+fieldset.grupo .campo {
     float: left;
     margin-right: 1em;
 }
 
-.campo input[type="text"], .campo input[type="email"]{
+.campo input[type="text"],
+.campo input[type="email"] {
     padding: 0.2em;
     border: 1px solid black;
     box-shadow: 2px 2px 2px black;
     display: block;
 }
 
-.campo input:focus{
+.campo input:focus {
     background: white;
 }
 
-.senha{
+.senha {
     font-size: 1.2em;
     background: white;
     border: 0;
     margin-bottom: 1em;
     color: orange;
-    padding: 0.2em 0.0.6em;
+    padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px;
     text-shadow: 1px 1px 1px;
     position: absolute;
@@ -54,31 +54,30 @@ fieldset.grupo .campo{
     transform: translate(-50%, -50%);
 }
 
-
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-  }
-  
-  .container {
+}
+
+.container {
     text-align: center;
-  }
-  
-  .container img {
+}
+
+.container img {
     max-width: 120px;
     width: 100%;
-  }
-  
-  .container h1 {
+}
+
+.container h1 {
     font-family: sans-serif;
     color: black;
     margin-left: 7%;
-  }
-  
-  .orange-button {
+}
+
+.cadastrar {
     background-color: orange;
     color: black;
     border: none;
@@ -87,6 +86,7 @@ body {
     font-size: 16px;
     border-radius: 5px;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -141,7 +141,7 @@ p {
     margin-bottom: 20px;
 }
 
-.orange-button {
+.cadastrar {
     background-color: orange;
     color: #fff;
     border: none;
