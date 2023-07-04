@@ -11,6 +11,10 @@ style.css: Este arquivo contém o estilo CSS para a aparência visual das págin
 Como executar o projeto
 Para executar o projeto, siga as etapas abaixo:
 
+Clone ou faça o download do repositório em seu computador.
+Abra o arquivo login.html em um navegador da web para acessar a página principal do Amazon Prime Video.
+Para acessar as páginas de registro e login, abra os arquivos cadastroprime.html e login.html, respectivamente, em um navegador da web.
+
 
 Tecnologias utilizadas
 HTML
@@ -22,6 +26,8 @@ Clone o repositório para o seu ambiente de desenvolvimento:
 bash
 Copy code
 git clone https://github.com/NycollasMeneses/PrimevideoClone
+
+
 Abra o arquivo login.html no seu navegador de preferência.
 Funcionalidades
 Exibição de filmes populares: Os filmes populares são obtidos por meio de requisições à API do TMDb e são exibidos na seção central da página inicial. São exibidos banners para os primeiros filmes e cartões para os demais.
